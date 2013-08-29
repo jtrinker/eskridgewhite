@@ -1,0 +1,42 @@
+<div class="row left-nav">
+	{{#linkTo "index"}}<img class="ew_logo" src="assets/ew.png">{{/linkTo}}
+</div>
+<div class="row nav">
+	<div class="large-12 colummns">
+		<ul class="inline-list top-nav">
+				<li><h6>{{#linkTo "about.philosophy"}}ABOUT{{/linkTo}}</h6></li>
+				<li><h6>//</h6></li>
+				<li><h6>CONDITIONS</h6></li>
+				<li><h6>//</h6></li>
+				<li><h6>PROGRAMS</h6><li>
+				<li><h6>//</h6></li>
+				<li><h6>TESTIMONIALS</h6></li>
+			</ul>
+	</div>
+</div>
+<div class="row subnav">
+		<div class="large-12 colummns">
+			{{#if renderAboutSubNav}}
+  			{{render 'about/subnav'}}
+			{{/if}}
+	  </div>
+</div>
+{{outlet}}
+<footer>
+	<div class="row">
+		<div class="large-5 columns">
+			<ul class="inline-list left-footer-nav">
+				<li><h6>LOCATIONS:</h6></li>
+				<li><h6>HOMEWOOD</h6></li>
+				<li><h6>TRUSSVILLE</h6><li>
+			</ul>
+		</div>
+		<div class="large-7 columns">
+			<ul class="inline-list right-footer-nav">
+				<li><h6>PATIENT RESOURCES</h6></li>
+				<li><h6>NEWS & EVENTS</h6></li>
+				<li><h6>MAKE AN APPOINTMENT</h6><li>
+			</ul>
+		</div>
+	</div>
+</footer>
