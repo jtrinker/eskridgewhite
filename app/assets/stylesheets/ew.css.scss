@@ -83,8 +83,16 @@ footer {
 
 .philosophy-bg {
 	background-image: url(about-philosophy-header.png);
-	width: 100%;
-	height: auto;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 12% 20%;
+}
+
+
+.about-phil {
+	padding: 8% 0% 22% 0%;
 }
 
 
