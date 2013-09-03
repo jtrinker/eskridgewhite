@@ -1,3 +1,20 @@
+p {
+	color: #5d646c;
+}
+
+span.first-line-caps {
+	font-size: 1.5em;
+	text-transform: uppercase;
+	color: #6aa1bc;
+}
+span.line-blue {
+	color: #6aa1bc;
+	font-size: 1.4em;
+}
+span.line-bigger {
+	font-size: 1.4em;
+}
+
 // Nav/Footer
 
 .active {
@@ -6,9 +23,10 @@
 
 .left-nav {
 	position: relative;
-	background-image: url(left_nav.png);
-	width: 406px !important;
-	height: 86px;
+	background-image: url(left_nav2.png);
+	background-repeat: no-repeat;
+	width: 433px !important;
+	height: 94px;
 	position: absolute;
 	z-index: 1;
 	top: 8px;
@@ -16,6 +34,15 @@
 	.ew_logo {
 		margin-top: 23px;
 		margin-left: 30px;
+	}
+
+	.eskridge-plus {
+		margin-left: 159px;
+		margin-top: -32px;
+		text-transform: uppercase;
+		color: #5d646c;
+		font-size: 1.25em;
+		letter-spacing: 2px;
 	}
 }
 
@@ -29,9 +56,18 @@
 	top: 40px;
 
 	.top-nav {
-		margin-top: 9px;
+		margin-top: 7px;
 		margin-left: 15px;
 		margin-bottom: 0 !important;
+
+		li h6 a {
+			color: #fff;
+			&:hover { color: #edae65; }
+		}
+
+		a.active {
+				color: #edae65 !important;
+			}
 	}
 }
 
@@ -42,10 +78,28 @@
 	position: absolute;
 	z-index: 1;
 	right: 0px;
-	top: 75px;
-	box-shadow: 4px -6px 14px -6px #333;
-	-webkit-box-shadow: 4px -6px 14px -6px #333;
-	-moz-box-shadow: 4px -6px 14px -6px #333;
+	top: 74px;
+	box-shadow: 8px 7px 11px -1px #232323;
+  -moz-box-shadow: 8px 7px 11px -1px #232323;
+  -webkit-box-shadow: 8px 7px 11px -1px #232323;
+
+	.subnav-list {
+		margin-top: 1px;
+		margin-left: 30px;
+	}
+
+	.subnav-item {
+		font-size: 0.7em;
+		text-transform: uppercase;
+
+		.active {
+			color: #6aa1bc;
+		}
+
+		a {
+			color: #5d646c;
+		}
+	}
 }
 
 footer {
@@ -56,12 +110,28 @@ footer {
 	.left-footer-nav {
 		margin-left: 28px;
 		margin-bottom: 0 !important;
+		margin-top: 9px;
+
+		li h6 {
+			color: #fff;
+		}
 	}
 
 	.right-footer-nav {
 		float: right;
 		margin-bottom: 0 !important;
+		margin-top: 9px;
+
+		li h6 {
+			color: #fff;
+		}
 	}
+}
+
+.row .tab {
+	position: absolute;
+	top: -50px;
+	left: 0px;
 }
 
 // Index
@@ -93,7 +163,19 @@ footer {
 
 .about-phil {
 	padding: 8% 0% 22% 0%;
+	visibility: hidden;
 }
+
+.philosophy-content {
+	background-color: #fff;
+
+	.about-us {
+		position: relative;
+		padding-left: 53px !important;
+		padding-top: 34px;
+	}
+}
+
 
 
 
