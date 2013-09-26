@@ -1,0 +1,1 @@
+Ew.LoadingRoute = Ember.Route.extend({});
